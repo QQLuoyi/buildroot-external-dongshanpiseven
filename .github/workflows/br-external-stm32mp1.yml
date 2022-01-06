@@ -1,6 +1,5 @@
 name: Auto Build DSP7 system.
 
-
 on:
   push:
     branches:
@@ -31,7 +30,7 @@ jobs:
         run: make -C buildroot BR2_EXTERNAL=../buildroot-external-dongshanpi-seven O=../output
         
       - name: Build toolchain
-        run: make -C buildroot BR2_EXTERNAL=../buildroot-external-dongshanpi-seven O=../output toolchain 
+        run: make -C buildroot BR2_EXTERNAL=../buildroot-external-dongshanpi-seven O=../output prepare-sdk 
         
       - name: Run legal-info
         run: make -C buildroot BR2_EXTERNAL=../buildroot-external-dongshanpi-seven O=../output legal-info
