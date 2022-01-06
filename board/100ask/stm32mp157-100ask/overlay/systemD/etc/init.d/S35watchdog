@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo V  > /dev/watchdog
-echo "disbale watchdog "

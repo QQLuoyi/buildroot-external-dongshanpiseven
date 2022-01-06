@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+M4PROJECTS_BUILD_CMDS	package/m4projects/m4projects.mk	/^define M4PROJECTS_BUILD_CMDS$/;"	m	language:Make
+M4PROJECTS_BUILD_CONFIG	package/m4projects/m4projects.mk	/^M4PROJECTS_BUILD_CONFIG = Debug$/;"	m	language:Make
+M4PROJECTS_CONFIGURE_CMDS	package/m4projects/m4projects.mk	/^define M4PROJECTS_CONFIGURE_CMDS$/;"	m	language:Make
+M4PROJECTS_INSTALL_TARGET_CMDS	package/m4projects/m4projects.mk	/^define M4PROJECTS_INSTALL_TARGET_CMDS$/;"	m	language:Make
+M4PROJECTS_LICENSE	package/m4projects/m4projects.mk	/^M4PROJECTS_LICENSE = Apache-2.0, MIT, BSD-3-Clause$/;"	m	language:Make
+M4PROJECTS_LICENSE_FILES	package/m4projects/m4projects.mk	/^M4PROJECTS_LICENSE_FILES = License.md$/;"	m	language:Make
+M4PROJECTS_MAKE_FLAGS	package/m4projects/m4projects.mk	/^M4PROJECTS_MAKE_FLAGS = \\$/;"	m	language:Make
+M4PROJECTS_PROJECTS_LIST	package/m4projects/m4projects.mk	/^M4PROJECTS_PROJECTS_LIST = \\$/;"	m	language:Make
+M4PROJECTS_SITE	package/m4projects/m4projects.mk	/^M4PROJECTS_SITE = $(call github,STMicroelectronics,STM32CubeMP1,$(M4PROJECTS_VERSION))$/;"	m	language:Make
+M4PROJECTS_VERSION	package/m4projects/m4projects.mk	/^M4PROJECTS_VERSION = 1.5.0$/;"	m	language:Make
+a	package/m4projects/parse_project_config.py	/^            a=i.get('superClass')$/;"	v	language:Python
+a	package/m4projects/parse_project_config.py	/^        a=i.find('location')$/;"	v	language:Python
+a	package/m4projects/parse_project_config.py	/^    a=i.find('locationURI')$/;"	v	language:Python
+atf_image	board/stmicroelectronics/stm32mp157/post-image.sh	/^atf_image()$/;"	f	language:Sh
+buildconfig	package/m4projects/parse_project_config.py	/^buildconfig=arg[2]$/;"	v	language:Python
+cflags	package/m4projects/parse_project_config.py	/^                        cflags=cflags+" '-D"+temp+"' \\\\\\n"$/;"	v	language:Python
+cflags	package/m4projects/parse_project_config.py	/^                        cflags=cflags+" -I"+temp+" \\\\\\n"$/;"	v	language:Python
+cflags	package/m4projects/parse_project_config.py	/^cflags=""$/;"	v	language:Python
+confdir	package/m4projects/parse_project_config.py	/^confdir=myroot+"\/out\/"+buildconfig+"\/conf"$/;"	v	language:Python
+count	package/m4projects/parse_project_config.py	/^count=0$/;"	v	language:Python
+cproj_tree	package/m4projects/parse_project_config.py	/^cproj_tree = ET.parse(".cproject")$/;"	v	language:Python
+f	package/m4projects/parse_project_config.py	/^f=open(confdir+"\/config.in", 'w')$/;"	v	language:Python
+fullpath	package/m4projects/parse_project_config.py	/^def fullpath(filename):$/;"	f	language:Python
+ldlibs	package/m4projects/parse_project_config.py	/^                    ldlibs=ldlibs+" -L"+temp+"\/"$/;"	v	language:Python
+ldlibs	package/m4projects/parse_project_config.py	/^                    ldlibs=ldlibs+" -l"+temp$/;"	v	language:Python
+ldlibs	package/m4projects/parse_project_config.py	/^ldlibs=""$/;"	v	language:Python
+ldscript	package/m4projects/parse_project_config.py	/^                ldscript=temp$/;"	v	language:Python
+ldscript	package/m4projects/parse_project_config.py	/^ldscript=""$/;"	v	language:Python
+main	board/stmicroelectronics/stm32mp157/post-image.sh	/^main()$/;"	f	language:Sh
+myroot	package/m4projects/parse_project_config.py	/^myroot=arg[3]$/;"	v	language:Python
+prj	package/m4projects/parse_project_config.py	/^prj=arg[1]$/;"	v	language:Python
+proj_tree	package/m4projects/parse_project_config.py	/^proj_tree = ET.parse(".project")$/;"	v	language:Python
+root	package/m4projects/parse_project_config.py	/^root = cproj_tree.getroot()$/;"	v	language:Python
+root	package/m4projects/parse_project_config.py	/^root = proj_tree.getroot()$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                        temp = re.sub('\\$\\{[^:]*:\/\\$\\{[^\\}]*\\}([^\\}]*)\\}', r'..\\1', temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                        temp=fullpath(temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                        temp=temp.replace("..\/", "",1)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                        temp=temp.replace("\\\\","\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                    temp = re.sub('\\$\\{[^:]*:\/\\$\\{[^\\}]*\\}([^\\}]*)\\}', r'..\\1', temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                    temp=fullpath(temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                    temp=j.get('value')$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                    temp=temp.replace("..\/", "",1)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                temp = re.sub('\\$\\%7BPARENT-(.)-PROJECT_LOC\\%7D', r'PARENT-\\1-PROJECT_LOC', temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                temp = re.sub('\\$\\%7BPROJECT_LOC\\%7D', r'PROJECT_LOC', temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                temp = re.sub('\\$\\{[^:]*:\/\\$\\{[^\\}]*\\}([^\\}]*)\\}', r'..\\1', temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                temp=fullpath(temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                temp=i.get('value')$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^                temp=temp.replace("..\/", "",1)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=fullpath(temp)$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-0-PROJECT_LOC\/", ".\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-1-PROJECT_LOC\/", "..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-2-PROJECT_LOC\/", "..\/..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-3-PROJECT_LOC\/", "..\/..\/..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-4-PROJECT_LOC\/", "..\/..\/..\/..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-5-PROJECT_LOC\/", "..\/..\/..\/..\/..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-6-PROJECT_LOC\/", "..\/..\/..\/..\/..\/..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PARENT-7-PROJECT_LOC\/", "..\/..\/..\/..\/..\/..\/..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^            temp=temp.replace("PROJECT_LOC\/", "..\/")$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^        temp=a.text$/;"	v	language:Python
+temp	package/m4projects/parse_project_config.py	/^    temp=j.get('name')$/;"	v	language:Python
