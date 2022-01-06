@@ -35,22 +35,23 @@ jobs:
         
       - name: Compress sdcard.img
         run: gzip -9 output/images/sdcard.img
-        
+                 
+      - run: tar -czvf ${{ matrix.config }}.tar.gz   output/images/*         
+
       - name: Store images
         uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.config }}
-          path: output/images/sdcard.img.gz
+          path: ${{ matrix.config }}.tar.gz
           
+      - run: ls -la
+      
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          body_path: |
-            output/images/${{ matrix.config }}-arm-buildroot-linux-gnueabihf_sdk-buildroot.tar.gz
-            output/images/${{ matrix.config }}-sdcard.img.gz
-            output/images/${{ matrix.config }}-tf-a-stm32mp157c-100ask-512d-v1.stm32
-            output/images/${{ matrix.config }}-u-boot.stm32
-            output/images/${{ matrix.config }}-uImage
-            output/images/${{ matrix.config }}-stm32mp157c-100ask-512d-lcd-v1.dtb
+          files: |
+            ${{ matrix.config }}.tar.gz
+            
+      - run: ls -la            
           
