@@ -31,7 +31,7 @@ jobs:
         run: make -C buildroot BR2_EXTERNAL=../buildroot-external-dongshanpiseven O=../output
         
       - name: Build toolchain
-        run: make -C buildroot BR2_EXTERNAL=../buildroot-external-dongshanpiseven O=../output prepare-sdk        
+        run: make -C buildroot BR2_EXTERNAL=../buildroot-external-dongshanpiseven O=../output sdk        
         
       - name: Compress sdcard.img
         run: gzip -9 output/images/sdcard.img
