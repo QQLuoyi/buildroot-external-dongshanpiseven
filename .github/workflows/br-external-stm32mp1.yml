@@ -2,12 +2,9 @@ name: Auto Build DSP7 system.
 
 on:
   push:
-    branches:
-      - main
     tags:
-      - 0.*
-      - 1.*
-
+       - '*'
+       
 jobs:
   build-all:
     runs-on: ubuntu-20.04
