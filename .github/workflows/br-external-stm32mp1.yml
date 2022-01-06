@@ -37,7 +37,7 @@ jobs:
         run: gzip -9 output/images/sdcard.img
         
       - name: Store images
-        uses: 
+        uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.config }}
           path: output/images/sdcard.img.gz
