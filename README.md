@@ -23,6 +23,73 @@
 | CubeMX Device Tree | No  |
 | Cortex M4 Firmware examples | No  |
 
+2. `dongshanpiseven_full-qt_defconfig`, 这是一个完整支持qt5的系统镜像，里面包含了一个 默认的QT自启动桌面，以及一些常用的QT 库。
+
+| Feature |     |
+| --- | --- |
+| TF-A | v2.2-stm32mp-r1 |
+| U-Boot | v2020.10-stm32mp-r1.1 |
+| Linux | v5.4-stm32mp-r1 |
+| OP-TEE | No  |
+| Qt5 | 5.15 |
+| qt5base_examples	| Yes |
+| qt5base_fontconfig| Yes |
+| qt5base_harfbuzz	| Yes |
+| qt5base_gif		| Yes |
+| qt5base_jpeg		| Yes |
+| qt5base_png		| Yes |
+| qt5base_syslog	| Yes |
+| qt5base_dbus		| Yes |
+| qt5base_icu		| Yes |
+| qt5base_tslib		| Yes |
+| qt5coap			| Yes |
+| qt5enginio		| Yes |
+| qt5imageformats	| Yes |
+| qt5knx			| Yes |
+| qt5multimedia		| Yes |
+| qt5quickcontrols	| Yes |
+| qt5quickcontrols2	| Yes |
+| qt5quicktimeline	| Yes |
+| qt5remoteobjects	| Yes |
+| qt5script			| Yes |
+| qt5scxml			| Yes |
+| qt5sensors		| Yes |
+| qt5serialbus		| Yes |
+| qt5svg			| Yes |
+| OpenGL |   |
+| WiFi | N/A |
+| Bluetooth | N/A |
+| Audio | Yes  |
+
+
+3. `dongshanpiseven_standard-lvgl_defconfig`, 这是一个支持LVGL 8.x 轻量级UI开发的配置文件，里面使用了musl C库，保证了最小体积，并支持了libinput等一些常用库，主要结合 *lvgl开发课程 *学习。
+
+
+| Feature |     |
+| --- | --- |
+| TF-A | v2.2-stm32mp-r1 |
+| U-Boot | v2020.10-stm32mp-r1.1 |
+| Linux | v5.4-stm32mp-r1 |
+| SDL2 | YES  |
+| Libinput | YES  |
+| openssh | YES  |
+
+
+
+4. `dongshanpiseven_standard-aiot_defconfig`, 这是一个物联网场景的专用配置文件，支持了 bluetooth   WiFi mqtt zigbee pppd 等常用工具，并支持libcurl。
+
+| Feature |     |
+| --- | --- |
+| TF-A | v2.2-stm32mp-r1 |
+| U-Boot | v2020.10-stm32mp-r1.1 |
+| Linux | v5.4-stm32mp-r1 |
+| WiFi | Yes |
+| Bluetooth | Yes |
+| MQTT | Yes  |
+| zigbee | Yes  |
+| 4G-Net | Yes  |
+| Openssh | YES  |
+
 ## 快速开始
 
 ### 环境配置
